@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border-radius: 0;
+	font-family: 'JetBrains Mono', monospace;
+}
+
+body {
+	max-width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: start;
+	align-items: center;
+	background-color: #182A40;
+	color: #A2BCD4;
+}
+
+h1 {
+	padding: 1rem 0;
+}
+button {
+	height: 2rem;
+	width: 2rem;
+	border: 0;
+}
+
+#result {
+	border:  2px solid #ABCDEF55;
+	margin-bottom: 1rem;
+}
+#current-value {
+	text-align: right;
+	border-top: 1px solid #ABCDEF33;
+}
+
+.container, .row {
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+	gap: 0.2rem;
+}
+
+#numbers, #operators{
+	display: flex;
+	gap: 0.2rem;
+	flex-direction: column-reverse;
+}
+#operators {
+	border-left: 0.1rem solid #182A40;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.number {
+	background-color: #DEF2;
+	color: #182A4066;
+}
+.number:hover {
+	background-color: #DEF;
+	color: #182A40;
+}
+.number:active {
+	background-color: #DEF2;
+}
+
+
+#operators > button {
+	background-color: #FFD4;
+	color: #72721633;
+}
+#operators > button:hover {
+	background-color: #FFD;
+	color: #727216;
+}
+#operators > button:active {
+	background-color: #FFD4;
+}
+
+
+#equal {
+	background-color: #EFD6;
+	color: #2A661866;
+}
+#equal:hover {
+	background-color: #EFD;
+	color: #2A6618;
+}
+#equal:active {
+	background-color: #EFD6;
+}
+
+
+#clear {
+	box-sizing: content-box;
+	margin-top: 0.2rem;
+	border: 0.2rem solid white;
+	border-radius: 50%;
+	background-color: #FED;
+	color: #70182A77;
+}
+#clear:hover {
+	background-color: #FCB;
+	color: #70182A;
+}
+#clear:active {
+	background-color: #FED;
+}
